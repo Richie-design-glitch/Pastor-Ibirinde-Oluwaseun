@@ -27,7 +27,6 @@ color:white;
 padding:20px;
 position:sticky;
 top:0;
-z-index:1000;
 }
 
 nav{
@@ -36,6 +35,19 @@ justify-content:space-between;
 align-items:center;
 max-width:1100px;
 margin:auto;
+}
+
+/* NEW: logo + title wrapper */
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-area img{
+height:40px;
+width:40px;
+object-fit:contain;
 }
 
 nav h2{
@@ -61,21 +73,11 @@ nav ul li a:hover{
 color:#38bdf8;
 }
 
-/* HERO */
 .hero{
 background:linear-gradient(to right,#2563eb,#1e3a8a);
 color:white;
 text-align:center;
-padding:100px 20px;
-}
-
-.hero img{
-width:110px;
-height:auto;
-margin-bottom:15px;
-background:white;
-padding:10px;
-border-radius:10px;
+padding:120px 20px;
 }
 
 .hero h1{
@@ -87,7 +89,6 @@ margin-bottom:10px;
 font-size:18px;
 }
 
-/* SECTIONS */
 section{
 max-width:1100px;
 margin:auto;
@@ -157,7 +158,11 @@ padding:20px;
 
 <nav>
 
-<h2>Pastor Oluwaseun</h2>
+<!-- LOGO ADDED HERE -->
+<div class="logo-area">
+    <img src="rccg-logo.png" alt="RCCG Logo">
+    <h2>Pastor Oluwaseun</h2>
+</div>
 
 <ul>
 <li><a href="#about">About</a></li>
@@ -172,11 +177,7 @@ padding:20px;
 </header>
 
 
-<!-- HERO -->
 <section class="hero">
-
-<!-- RCCG LOGO -->
-<img src="rccg-logo.png" alt="RCCG Logo">
 
 <h1>Pastor Ibirinde Oluwaseun</h1>
 
@@ -190,11 +191,9 @@ padding:20px;
 <h2>About Me</h2>
 
 <p>
-
 Pastor Ibirinde Oluwaseun is a dedicated minister of the Gospel serving in the Redeemed Christian Church of God. His passion is to teach the Word of God, inspire believers, and lead people into a deeper relationship with Jesus Christ.
 
 Through preaching, counseling, and evangelism, his ministry focuses on spiritual growth, faith, and community transformation.
-
 </p>
 
 </section>
